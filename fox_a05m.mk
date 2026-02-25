@@ -1,39 +1,34 @@
 #
-# Copyright (C) 2025 The Android Open Source Project
-# Copyright (C) 2025 The TWRP Open Source Project
+#	This file is part of the OrangeFox Recovery Project
+# 	Copyright (C) 2025 The OrangeFox Recovery Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+#	OrangeFox is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	any later version.
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#	OrangeFox is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+# 	This software is released under GPL version 3 or any later version.
+#	See <http://www.gnu.org/licenses/>.
+#
+# 	Please maintain this if you use this script or any part of it
 #
 
-# Include from common dir
-include device/samsung/mt6768-common/twrp_common.mk
+# OrangeFox Settings 
+OF_HIDE_NOTCH :- 0
+OF_ALLOW_DISABLE_NAVBAR :- 0
 
-# Inherit from a05m device
-$(call inherit-product, device/samsung/a05m/device.mk)
+# GUI related
+OF_SCREEN_H :- 2400
+OF_STATUS_H :- 42
+OF_STATUS_INDENT_LEFT :- 50
+OF_STATUS_INDENT_RIGHT :- 50
+OF_CLOCK_POS :- 1
 
-# Enable project quotas and casefolding for emulated storage without sdcardfs
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
-PRODUCT_DEVICE := a05m
-PRODUCT_NAME := fox_a05m
-PRODUCT_MODEL := SM-A055F
-
-BUILD_FINGERPRINT := samsung/a05mxx/a05m:15/AP3A.240905.015.A2/A055FXXSCDYL3:user/release-keys
-
-# OrangeFox only stuff
-
-# Define hardware platform
-PRODUCT_RELEASE_NAME := a05m
-
-# Inherit any OrangeFox-specific settings
-$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
+# Miscellaneous
+OF_SPLASH_MAX_SIZE :- 4096
+FOX_VERSION :- "R11.1"

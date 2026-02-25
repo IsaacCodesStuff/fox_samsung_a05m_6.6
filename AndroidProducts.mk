@@ -16,6 +16,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fox_a05m.mk
+    $(LOCAL_DIR)/twrp_a05m.mk
 
-COMMON_LUNCH_CHOICES := fox_a05m-userdebug
+COMMON_LUNCH_CHOICES := twrp_a05m-userdebug
