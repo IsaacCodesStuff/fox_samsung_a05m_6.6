@@ -41,7 +41,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
  	export LC_ALL="C"
 
     export OF_MAINTAINER="IsaacCodesStuff"
-	export FOX_BUILD_TYPE="Stable - Unofficial"
+	export FOX_BUILD_TYPE="Unofficial"
 	export FOX_VERSION :- "R11.1"
 
     export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
