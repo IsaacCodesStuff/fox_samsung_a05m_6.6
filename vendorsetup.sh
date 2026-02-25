@@ -42,7 +42,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
     export OF_MAINTAINER="IsaacCodesStuff"
 	export FOX_BUILD_TYPE="Unofficial"
-	export FOX_MAINTAINER_PATCH_VERSION="1"
 
     export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
     export FOX_USE_NANO_EDITOR=1
