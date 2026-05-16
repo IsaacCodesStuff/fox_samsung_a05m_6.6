@@ -23,3 +23,11 @@ PRODUCT_NAME := twrp_a05m
 PRODUCT_MODEL := SM-A055F
 
 BUILD_FINGERPRINT := samsung/a05mxx/a05m:15/AP3A.240905.015.A2/A055FXXU9DYF5:user/release-keys
+
+# OrangeFox only stuff
+
+# Define hardware platform
+PRODUCT_RELEASE_NAME := a06
+
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
