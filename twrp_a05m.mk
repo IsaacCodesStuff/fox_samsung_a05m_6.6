@@ -27,7 +27,7 @@ BUILD_FINGERPRINT := samsung/a05mxx/a05m:15/AP3A.240905.015.A2/A055FXXU9DYF5:use
 # OrangeFox only stuff
 
 # Define hardware platform
-PRODUCT_RELEASE_NAME := a06
+PRODUCT_RELEASE_NAME := a05m
 
 # Inherit any OrangeFox-specific settings
 $(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
