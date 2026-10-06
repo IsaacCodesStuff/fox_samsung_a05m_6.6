@@ -1,0 +1,13 @@
+#
+# Copyright (C) 2026 The Android Open Source Project
+# Copyright (C) 2026 SebaUbuntu's TWRP device tree generator
+# Copyright (C) 2026 yukiprjkt
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),a05m)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif

@@ -1,0 +1,6 @@
+# Aliases extracted from modules themselves.
+alias of:N*T*Cfocaltech,fts focaltech_tp
+alias of:N*T*Cfocaltech,ftsC* focaltech_tp
+alias spi:omnivision_tcm_spi omnivision_tcm_core_module
+alias of:N*T*Comnivision,tcm-spi omnivision_tcm_core_module
+alias of:N*T*Comnivision,tcm-spiC* omnivision_tcm_core_module

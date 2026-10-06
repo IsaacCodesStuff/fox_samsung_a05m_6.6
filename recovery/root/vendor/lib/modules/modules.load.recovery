@@ -1,0 +1,7 @@
+sec_cmd.ko
+nt36528_tp.ko
+focaltech_tp.ko
+gcore_tp.ko
+omnivision_tcm_core_module.ko
+chipone-tddi.ko
+gt1151.ko

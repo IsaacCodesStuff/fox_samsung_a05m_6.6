@@ -1,0 +1,7 @@
+/vendor/lib/modules/focaltech_tp.ko: /vendor/lib/modules/sec_cmd.ko
+/vendor/lib/modules/omnivision_tcm_core_module.ko: /vendor/lib/modules/sec_cmd.ko
+/vendor/lib/modules/chipone-tddi.ko: /vendor/lib/modules/sec_cmd.ko
+/vendor/lib/modules/sec_cmd.ko:
+/vendor/lib/modules/gcore_tp.ko: /vendor/lib/modules/sec_cmd.ko
+/vendor/lib/modules/nt36528_tp.ko: /vendor/lib/modules/sec_cmd.ko
+/vendor/lib/modules/gt1151.ko: /vendor/lib/modules/sec_cmd.ko
